@@ -22,3 +22,7 @@ def toggle_event(key):
 
 click_thread = threading.Thread(target=clicker)
 click_thread.start()
+
+with Listener(on_press=toggle_event) as listener:
+    listener.join()
+    
