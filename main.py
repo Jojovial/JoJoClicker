@@ -25,6 +25,3 @@ click_thread.start()
 
 with Listener(on_press=toggle_event) as listener:
     listener.join()
-
-
-    
